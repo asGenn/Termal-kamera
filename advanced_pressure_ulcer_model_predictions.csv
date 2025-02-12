@@ -1,0 +1,128 @@
+Dosya,Gerçek,Tahmin,Göreceli_Olasılık,Yüksek_Olasılık,Çok_Yüksek_Olasılık
+GLUTEAL.ÇYR.-2.8 (4).jpg,Cok_Yuksek_Risk,Yuksek_Risk,0.16800699,0.4463499,0.3856431
+GLUTEAL.ÇYR.-2.8.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.23781078,0.34282416,0.4193651
+GLUTEAL.ÇYR.-2.9.jpg,Goreceli_Risk,Goreceli_Risk,0.6997763,0.14502484,0.15519892
+GLUTEAL.ÇYR.-3.0 (2).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.33823758,0.29174942,0.37001294
+GLUTEAL.ÇYR.-3.0 (3).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.099466525,0.33241156,0.5681219
+GLUTEAL.ÇYR.-3.0 (4).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.13224736,0.30823743,0.55951524
+GLUTEAL.ÇYR.-3.0 (5).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.1572823,0.35396942,0.4887483
+GLUTEAL.ÇYR.-3.0 (6).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.19447345,0.31803915,0.48748735
+GLUTEAL.ÇYR.-3.0.jpg,Goreceli_Risk,Goreceli_Risk,0.5963147,0.19137585,0.21230942
+GLUTEAL.ÇYR.-3.1 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.6899213,0.14843726,0.16164143
+GLUTEAL.ÇYR.-3.1 (3).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.24487543,0.3057441,0.44938043
+GLUTEAL.ÇYR.-3.1 (4).jpg,Goreceli_Risk,Goreceli_Risk,0.52694243,0.23103148,0.24202608
+GLUTEAL.ÇYR.-3.1 (5).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.029079055,0.33185622,0.63906467
+GLUTEAL.ÇYR.-3.1.jpg,Goreceli_Risk,Goreceli_Risk,0.78132147,0.106528424,0.11215002
+GLUTEAL.ÇYR.-3.2 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.8298284,0.107488506,0.0626831
+GLUTEAL.ÇYR.-3.2.jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.25296175,0.32105362,0.4259846
+GLUTEAL.ÇYR.-3.3 (2).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.20918372,0.31101075,0.4798056
+GLUTEAL.ÇYR.-3.3 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.8115532,0.103144035,0.0853028
+GLUTEAL.ÇYR.-3.3.jpg,Goreceli_Risk,Goreceli_Risk,0.54335654,0.21181722,0.24482623
+GLUTEAL.ÇYR.-3.4.jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.72283334,0.13604724,0.14111947
+GLUTEAL.ÇYR.-3.5 (2).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.017001571,0.45767272,0.5253257
+GLUTEAL.ÇYR.-3.5.jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.19853447,0.35652724,0.44493827
+GLUTEAL.ÇYR.-4.1.jpg,Goreceli_Risk,Goreceli_Risk,0.86358666,0.07234189,0.064071454
+GLYTEAL.ÇYR.-3.3.jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.29013392,0.2977025,0.4121636
+LATERAL MALLEOL.ÇYR.-2.4.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.1470614,0.33890072,0.5140379
+SAKRUM.ÇYR.-2.1 (2).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.30320227,0.3292547,0.36754307
+SAKRUM.ÇYR.-2.1.jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.10870585,0.29967037,0.5916238
+SAKRUM.ÇYR.-2.2 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.72958446,0.14377728,0.12663828
+SAKRUM.ÇYR.-2.2.jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.20507309,0.3288031,0.46612385
+SAKRUM.ÇYR.-2.4.jpg,Goreceli_Risk,Goreceli_Risk,0.8006583,0.11004294,0.08929878
+SAKRUM.ÇYR.-2.5.jpg,Goreceli_Risk,Goreceli_Risk,0.72371083,0.14637667,0.12991259
+SAKRUM.ÇYR.-2.7.jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.2562958,0.3599693,0.38373488
+SAKRUM.ÇYR.-3.0.jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.11202744,0.33501875,0.5529537
+SAKRUM.ÇYR.-3.1 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.78867024,0.12246289,0.08886682
+SAKRUM.ÇYR.-3.1.jpg,Goreceli_Risk,Goreceli_Risk,0.7124126,0.14433861,0.14324875
+SAKRUM.ÇYR.-3.5.jpg,Goreceli_Risk,Goreceli_Risk,0.82467127,0.09568822,0.07964044
+SAKRUM.ÇYR.-3.8.jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.33747488,0.3252562,0.33726892
+TOPUK. ÇYR. -2.3.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.12725836,0.29098845,0.5817532
+TOPUK. ÇYR. -4.2.jpg,Goreceli_Risk,Goreceli_Risk,0.72179514,0.15034215,0.12786265
+TOPUK.ÇYR.-2.1 (1).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.25931644,0.32207805,0.4186055
+TOPUK.ÇYR.-2.1 (2).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.17914602,0.40474358,0.41611037
+TOPUK.ÇYR.-2.1 (3).jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.3914405,0.26100093,0.3475586
+TOPUK.ÇYR.-2.1 (4).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.10859247,0.37171185,0.51969564
+TOPUK.ÇYR.-2.1 (5).jpg,Yuksek_Risk,Goreceli_Risk,0.7652889,0.11966029,0.11505074
+TOPUK.ÇYR.-2.1 (6).jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.5621957,0.20596817,0.23183604
+TOPUK.ÇYR.-2.1 (7).jpg,Yuksek_Risk,Goreceli_Risk,0.48632476,0.25004897,0.26362634
+TOPUK.ÇYR.-2.1 (8).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.30245185,0.2844043,0.41314384
+TOPUK.ÇYR.-2.1.jpg,Goreceli_Risk,Goreceli_Risk,0.6520955,0.15717079,0.19073373
+TOPUK.ÇYR.-2.2 (1).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.3370413,0.294998,0.36796072
+TOPUK.ÇYR.-2.2 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.7920882,0.11027582,0.097635955
+TOPUK.ÇYR.-2.2 (3).jpg,Yuksek_Risk,Goreceli_Risk,0.3577408,0.30087537,0.34138387
+TOPUK.ÇYR.-2.2 (4).jpg,Yuksek_Risk,Goreceli_Risk,0.5284076,0.24004927,0.2315431
+TOPUK.ÇYR.-2.2.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.22108886,0.28832144,0.4905897
+TOPUK.ÇYR.-2.3 (1).jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.54371256,0.19154416,0.26474333
+TOPUK.ÇYR.-2.3 (2).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.17338839,0.28995815,0.5366535
+TOPUK.ÇYR.-2.3 (3).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.27544144,0.2998279,0.4247306
+TOPUK.ÇYR.-2.3 (4).jpg,Goreceli_Risk,Goreceli_Risk,0.6594292,0.16548836,0.1750824
+TOPUK.ÇYR.-2.3 (5).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.25570083,0.3141727,0.43012652
+TOPUK.ÇYR.-2.3 (6).jpg,Goreceli_Risk,Goreceli_Risk,0.82160336,0.096990116,0.081406474
+TOPUK.ÇYR.-2.3.jpg,Goreceli_Risk,Goreceli_Risk,0.396378,0.3341227,0.2694993
+TOPUK.ÇYR.-2.4 (1).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.23816696,0.3146816,0.4471515
+TOPUK.ÇYR.-2.4 (2).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.24906224,0.28687966,0.464058
+TOPUK.ÇYR.-2.4 (3).jpg,Yuksek_Risk,Goreceli_Risk,0.45512563,0.2515923,0.293282
+TOPUK.ÇYR.-2.4 (4).jpg,Goreceli_Risk,Goreceli_Risk,0.77067447,0.13484663,0.094478965
+TOPUK.ÇYR.-2.4.jpg,Yuksek_Risk,Goreceli_Risk,0.5485991,0.21194674,0.2394542
+TOPUK.ÇYR.-2.5 (1).jpg,Yuksek_Risk,Goreceli_Risk,0.6489659,0.17892559,0.17210846
+TOPUK.ÇYR.-2.5 (10).jpg,Goreceli_Risk,Goreceli_Risk,0.8147561,0.0989636,0.08628026
+TOPUK.ÇYR.-2.5 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.78869563,0.118525095,0.09277927
+TOPUK.ÇYR.-2.5 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.7911068,0.11527264,0.09362057
+TOPUK.ÇYR.-2.5 (4).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.22298774,0.31825876,0.45875347
+TOPUK.ÇYR.-2.5 (5).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.27038866,0.31856075,0.41105056
+TOPUK.ÇYR.-2.5 (6).jpg,Yuksek_Risk,Goreceli_Risk,0.512576,0.22353739,0.2638866
+TOPUK.ÇYR.-2.5 (7).jpg,Goreceli_Risk,Goreceli_Risk,0.8112095,0.100279555,0.08851095
+TOPUK.ÇYR.-2.5 (8).jpg,Goreceli_Risk,Goreceli_Risk,0.6929203,0.14747469,0.15960495
+TOPUK.ÇYR.-2.5 (9).jpg,Goreceli_Risk,Goreceli_Risk,0.34998554,0.30547902,0.34453547
+TOPUK.ÇYR.-2.5.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.16217732,0.33111447,0.5067082
+TOPUK.ÇYR.-2.6 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.6611739,0.1577312,0.18109491
+TOPUK.ÇYR.-2.6 (2).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.23923837,0.30143476,0.45932695
+TOPUK.ÇYR.-2.6 (3).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.21392086,0.3023406,0.4837386
+TOPUK.ÇYR.-2.6 (4).jpg,Goreceli_Risk,Goreceli_Risk,0.4204909,0.25436312,0.325146
+TOPUK.ÇYR.-2.6 (5).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.15366799,0.39404902,0.45228302
+TOPUK.ÇYR.-2.6.jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.10243709,0.3564498,0.541113
+TOPUK.ÇYR.-2.7 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.76911795,0.13038185,0.10050014
+TOPUK.ÇYR.-2.7 (2).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.14310382,0.32153353,0.53536266
+TOPUK.ÇYR.-2.7.jpg,Goreceli_Risk,Goreceli_Risk,0.7930621,0.1150293,0.09190863
+TOPUK.ÇYR.-2.8 (1).jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.39544797,0.25522348,0.34932852
+TOPUK.ÇYR.-2.8 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.7781446,0.115056746,0.1067986
+TOPUK.ÇYR.-2.8 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.8060892,0.106444746,0.08746598
+TOPUK.ÇYR.-2.8 (4).jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.7229033,0.14729002,0.12980674
+TOPUK.ÇYR.-2.8 (5).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.122359164,0.37553266,0.5021082
+TOPUK.ÇYR.-2.8 (6).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.1827943,0.3075785,0.50962716
+TOPUK.ÇYR.-2.8.jpg,Goreceli_Risk,Goreceli_Risk,0.77302086,0.12799646,0.09898272
+TOPUK.ÇYR.-2.9 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.75257427,0.12039148,0.1270343
+TOPUK.ÇYR.-2.9 (2).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.2914871,0.31369916,0.39481378
+TOPUK.ÇYR.-2.9 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.5002392,0.21856818,0.2811926
+TOPUK.ÇYR.-2.9 (4).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.35345432,0.2902995,0.3562461
+TOPUK.ÇYR.-2.9.jpg,Goreceli_Risk,Goreceli_Risk,0.7918905,0.12261247,0.08549705
+TOPUK.ÇYR.-3 (1).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.34523058,0.27831087,0.3764585
+TOPUK.ÇYR.-3 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.63701606,0.16815244,0.19483143
+TOPUK.ÇYR.-3 (3).jpg,Cok_Yuksek_Risk,Cok_Yuksek_Risk,0.27394426,0.28317592,0.44287977
+TOPUK.ÇYR.-3.0 (2).jpg,Goreceli_Risk,Goreceli_Risk,0.72129214,0.15087053,0.12783735
+TOPUK.ÇYR.-3.0 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.65294087,0.17055032,0.17650889
+TOPUK.ÇYR.-3.0.jpg,Yuksek_Risk,Goreceli_Risk,0.6227366,0.17829832,0.19896507
+TOPUK.ÇYR.-3.2.jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.20565678,0.25214127,0.542202
+TOPUK.ÇYR.-3.3.jpg,Goreceli_Risk,Goreceli_Risk,0.80317324,0.112302,0.08452483
+TOPUK.ÇYR.-3.4 (1).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.1218221,0.30811763,0.5700604
+TOPUK.ÇYR.-3.4 (2).jpg,Yuksek_Risk,Cok_Yuksek_Risk,0.087661766,0.3702773,0.542061
+TOPUK.ÇYR.-3.4.jpg,Goreceli_Risk,Goreceli_Risk,0.66571635,0.14813618,0.1861474
+TOPUK.ÇYR.-3.5 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.7993223,0.106526606,0.09415103
+TOPUK.ÇYR.-3.5 (2).jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.29981261,0.30764636,0.39254102
+TOPUK.ÇYR.-3.5 (3).jpg,Goreceli_Risk,Goreceli_Risk,0.39061308,0.25174794,0.357639
+TOPUK.ÇYR.-3.5 (4).jpg,Goreceli_Risk,Goreceli_Risk,0.8024582,0.10344285,0.09409888
+TOPUK.ÇYR.-3.5.jpg,Goreceli_Risk,Goreceli_Risk,0.74230653,0.12500635,0.13268712
+TOPUK.ÇYR.-3.6 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.6704426,0.1670224,0.16253498
+TOPUK.ÇYR.-3.6.jpg,Goreceli_Risk,Goreceli_Risk,0.7987291,0.11768097,0.08358986
+TOPUK.ÇYR.-3.7 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.7379903,0.13756345,0.12444628
+TOPUK.ÇYR.-3.7.jpg,Goreceli_Risk,Cok_Yuksek_Risk,0.18833953,0.3454614,0.466199
+TOPUK.ÇYR.-3.8.jpg,Goreceli_Risk,Goreceli_Risk,0.7772914,0.117009,0.10569961
+TOPUK.ÇYR.-3.9.jpg,Goreceli_Risk,Goreceli_Risk,0.6252098,0.18074109,0.1940491
+TOPUK.ÇYR.-3.jpg,Goreceli_Risk,Goreceli_Risk,0.81361014,0.09141361,0.09497617
+TOPUK.ÇYR.-4.1.jpg,Goreceli_Risk,Goreceli_Risk,0.73855686,0.13401146,0.12743159
+TOPUK.ÇYR.-4.3.jpg,Yuksek_Risk,Goreceli_Risk,0.59949476,0.19954316,0.20096216
+TOPUK.ÇYR.-4.9 (1).jpg,Goreceli_Risk,Goreceli_Risk,0.58774304,0.1833765,0.22888048
+TOPUK.ÇYR.-4.9.jpg,Cok_Yuksek_Risk,Goreceli_Risk,0.48796776,0.23718347,0.2748488
+TOPUK.ÇYR.-4.jpg,Goreceli_Risk,Goreceli_Risk,0.78779227,0.10570523,0.106502526
+TOPUK.ÇYR.-5.2.jpg,Yuksek_Risk,Goreceli_Risk,0.56525314,0.18953659,0.24521032
+TOPUKÇYR.-2.3.jpg,Goreceli_Risk,Goreceli_Risk,0.7891055,0.10881168,0.102082826
