@@ -36,11 +36,11 @@ PATIENCE = 30                # Erken durdurma sabrı
 def load_and_preprocess_data(data_dir, classes):
     """
     Termal görüntüleri yükler ve normalizasyon uygular
-    
+
     Args:
         data_dir (str): Veri klasörü yolu
         classes (list): Sınıf etiketleri
-        
+
     Returns:
         tuple: (images, labels, filenames)
     """
@@ -58,7 +58,7 @@ def load_and_preprocess_data(data_dir, classes):
                 img_path = os.path.join(class_path, img_file)
                 img = tf.keras.preprocessing.image.load_img(
                     img_path,
-                    color_mode='grayscale',
+                    color_mode='rgb',  # Renkli görüntüleri yüklemek için değiştirildi
                     target_size=IMG_SIZE
                 )
 
@@ -66,8 +66,8 @@ def load_and_preprocess_data(data_dir, classes):
                 img_array = tf.keras.preprocessing.image.img_to_array(img)
                 img_array = img_array / 255.0  # [0-1] aralığına normalizasyon
 
-                # Kanal boyutunu ekle (224,224,1)
-                img_array = tf.expand_dims(img_array, axis=-1)
+                # Kanal boyutunu ekle (224,224,3)
+                # Renkli görüntüler için kanal boyutu zaten mevcut, bu nedenle ekleme gerekmez
 
                 images.append(img_array)
                 labels.append(class_idx)
@@ -84,17 +84,17 @@ def load_and_preprocess_data(data_dir, classes):
 def create_advanced_model(input_shape, num_classes):
     """
     Optimize edilmiş CNN modelini oluşturur
-    
+
     Mimari Özellikleri:
     - 3 Konvolüsyon Bloğu
     - Global Average Pooling
     - Gelişmiş Regularizasyon
     - Entegre Veri Artırma
-    
+
     Args:
         input_shape (tuple): Giriş görüntü boyutu
         num_classes (int): Sınıf sayısı
-        
+
     Returns:
         tf.keras.Model: Derlenmiş model
     """
@@ -148,7 +148,7 @@ def create_advanced_model(input_shape, num_classes):
 def get_callbacks(model_name):
     """
     Eğitim sürecini yöneten callback'leri oluşturur
-    
+
     Returns:
         list: Callback listesi
     """
@@ -190,7 +190,7 @@ def get_callbacks(model_name):
 def visualize_results(history, y_true, y_pred, classes):
     """
     Eğitim sonuçlarını ve performans metriklerini görselleştirir
-    
+
     Args:
         history: Eğitim geçmişi
         y_true: Gerçek etiketler
@@ -229,6 +229,110 @@ def visualize_results(history, y_true, y_pred, classes):
     plt.title('Sınıflandırma Performansı')
     plt.show()
 
+# -------------------- TENSORFLOW LITE DÖNÜŞÜMÜ --------------------
+
+
+def convert_to_tflite(model, model_name):
+    """
+    TensorFlow modelini Android için TFLite formatına dönüştürür
+
+    Args:
+        model: Eğitilmiş TensorFlow modeli (bu parametreyi kullanmayacağız)
+        model_name (str): Model dosyası için temel isim
+
+    Returns:
+        str: Oluşturulan TFLite dosyasının yolu
+    """
+    print("\nModel TensorFlow Lite formatına dönüştürülüyor...")
+
+    # H5 dosyasını kontrol et
+    h5_path = f"{model_name}_final.h5"
+
+    if not os.path.exists(h5_path):
+        print(f"HATA: {h5_path} dosyası bulunamadı!")
+        print("İpucu: Önce modeli eğitip kaydetmelisiniz.")
+        return None
+
+    try:
+        # Dosyadan doğrudan TFLite dönüşümü yapmayı dene
+        print(f"'{h5_path}' dosyasından TFLite dönüşümü yapılıyor...")
+
+        # Manuel olarak TFLite dönüşümü yapalım
+        import subprocess
+        import sys
+
+        tflite_filename = f"{model_name}.tflite"
+
+        # Python script dosyası oluştur
+        converter_script = "tflite_converter.py"
+        with open(converter_script, "w") as f:
+            f.write("""
+import sys
+import tensorflow as tf
+
+# H5 dosyasını yükle
+h5_path = sys.argv[1]
+tflite_path = sys.argv[2]
+
+# Modeli yükle
+model = tf.keras.models.load_model(h5_path)
+
+# TFLite dönüştürücüsünü oluştur
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+
+# Optimizasyon seçenekleri
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+
+# Dönüşümü gerçekleştir
+tflite_model = converter.convert()
+
+# TFLite modelini dosyaya kaydet
+with open(tflite_path, 'wb') as f:
+    f.write(tflite_model)
+
+print(f"TFLite modeli başarıyla oluşturuldu: {tflite_path}")
+print(f"Model boyutu: {len(tflite_model) / 1024:.2f} KB")
+""")
+
+        # Script'i ayrı bir Python işleminde çalıştır
+        # Python 3.12 yerine kullanılabilir başka bir Python sürümünüz varsa, onu kullanın
+        python_cmd = sys.executable  # Mevcut Python yorumlayıcısı
+        cmd = [python_cmd, converter_script, h5_path, tflite_filename]
+
+        print(f"Dönüşüm komutu çalıştırılıyor: {' '.join(cmd)}")
+        result = subprocess.run(cmd, capture_output=True, text=True)
+
+        if result.returncode == 0:
+            print(result.stdout)
+            print(f"Dönüşüm başarılı: {tflite_filename}")
+
+            # Geçici script dosyasını temizle
+            if os.path.exists(converter_script):
+                os.remove(converter_script)
+
+            return tflite_filename
+        else:
+            print(f"Dönüşüm başarısız. Hata: {result.stderr}")
+
+            # Alternatif yöntem önerisi
+            print("\nAlternatif çözüm önerileri:")
+            print("1. Python 3.8 veya 3.9 sürümü kullanarak dönüşümü tekrar deneyin.")
+            print(
+                "2. TensorFlow'u pip ile güncellemeyi deneyin: pip install tensorflow==2.10.0")
+            print(
+                "3. Modeli daha düşük bir Python sürümünde (3.8/3.9) eğitip tekrar dönüştürün.")
+
+            return None
+
+    except Exception as e:
+        print(f"TFLite dönüşümünde beklenmeyen hata: {str(e)}")
+        print("\nPython 3.12 ile TensorFlow uyumsuzluğu yaşanıyor olabilir.")
+        print("Önerilen çözümler:")
+        print("1. Python 3.8 veya 3.9 sürümü kullanarak dönüşümü tekrar deneyin.")
+        print(
+            "2. TensorFlow'u pip ile güncellemeyi deneyin: pip install tensorflow==2.10.0")
+        return None
+
 # -------------------- ANA İŞLEM --------------------
 
 
@@ -239,13 +343,13 @@ def main():
     MODEL_NAME = "advanced_pressure_ulcer_model"
 
     # 1. Veri Yükleme
-    print("\n[1/6] Veri yükleniyor...")
+    print("\n[1/7] Veri yükleniyor...")
     X, y, filenames = load_and_preprocess_data(DATA_DIR, CLASSES)
     print(f"Toplam örnek sayısı: {len(X)}")
     print(f"Sınıf dağılımı: {dict(zip(CLASSES, np.bincount(y)))}")
 
     # 2. Veri Bölme
-    print("\n[2/6] Veri bölünüyor...")
+    print("\n[2/7] Veri bölünüyor...")
     X_train, X_val_test, y_train, y_val_test = train_test_split(
         X, y,
         test_size=0.3,
@@ -262,7 +366,7 @@ def main():
         f"Eğitim: {len(X_train)}, Doğrulama: {len(X_val)}, Test: {len(X_test)}")
 
     # 3. Sınıf Ağırlıkları
-    print("\n[3/6] Sınıf ağırlıkları hesaplanıyor...")
+    print("\n[3/7] Sınıf ağırlıkları hesaplanıyor...")
     class_weights = compute_class_weight(
         'balanced',
         classes=np.unique(y_train),
@@ -272,12 +376,12 @@ def main():
     print("Sınıf Ağırlıkları:", class_weights)
 
     # 4. Model Oluşturma
-    print("\n[4/6] Model inşa ediliyor...")
-    model = create_advanced_model((*IMG_SIZE, 1), len(CLASSES))
+    print("\n[4/7] Model inşa ediliyor...")
+    model = create_advanced_model((*IMG_SIZE, 3), len(CLASSES))
     model.summary()
 
     # 5. Model Eğitimi
-    print("\n[5/6] Model eğitimi başlatılıyor...")
+    print("\n[5/7] Model eğitimi başlatılıyor...")
     history = model.fit(
         X_train, y_train,
         validation_data=(X_val, y_val),
@@ -289,7 +393,7 @@ def main():
     )
 
     # 6. Değerlendirme ve Raporlama
-    print("\n[6/6] Performans değerlendiriliyor...")
+    print("\n[6/7] Performans değerlendiriliyor...")
 
     # Test seti değerlendirme
     test_loss, test_acc = model.evaluate(X_test, y_test, verbose=0)
@@ -322,6 +426,14 @@ def main():
     # Modeli Kaydet
     model.save(f'{MODEL_NAME}_final.h5')
     print("\nFinal model kaydedildi.")
+
+    # 7. TensorFlow Lite Dönüşümü
+    print("\n[7/7] Android için TFLite modeli oluşturuluyor...")
+    tflite_path = convert_to_tflite(model, MODEL_NAME)
+    if tflite_path:
+        print(f"\nAndroid'de kullanılmaya hazır TFLite modeli: {tflite_path}")
+    else:
+        print("\nTFLite dönüşümü başarısız oldu. Manuel olarak dönüştürmeyi deneyin.")
 
 
 if __name__ == "__main__":
